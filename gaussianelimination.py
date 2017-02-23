@@ -33,10 +33,10 @@ def gaussy(A, b, n):
             summ = summ + A[l[j]][k] * x[k]
         x[j] = (b[l[j]] - summ) / A[l[j]][j]
 
-    print ("The solution vector is [",)
+    print ("The solution vector is [", end="")
     for i in range(n):
         if i != (n - 1):
-            print(x[i], ",",)
+            print(x[i], ",", end="")
         else:
             print(x[i], "].")
 
